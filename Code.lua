@@ -23,7 +23,7 @@ Title.TextSize = 24
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.BackgroundTransparency = 1
 Title.Size = UDim2.new(1, -50, 0, 40)
-Title.Position = UDim2.new(0, 10, 0, 5)
+Title.Position = UDim2.new(0, 10, 0, 1)
 Title.TextXAlignment = Enum.TextXAlignment.Left
 Title.Parent = Frame
 
@@ -47,8 +47,8 @@ end)
 
 
 local TextBox = Instance.new("TextBox")
-TextBox.Size = UDim2.new(0, 480, 0, 60)
-TextBox.Position = UDim2.new(0, 10, 0, 50)
+TextBox.Size = UDim2.new(0, 480, 0, 110)
+TextBox.Position = UDim2.new(0, 10, 0, 40)
 TextBox.PlaceholderText = "Paste  you scripts here"
 TextBox.Text = ""
 TextBox.TextSize = 16
@@ -66,7 +66,7 @@ UICorner2.CornerRadius = UDim.new(0, 6)
 
 local LoadButton = Instance.new("TextButton")
 LoadButton.Size = UDim2.new(0, 480, 0, 50)
-LoadButton.Position = UDim2.new(0, 10, 0, 120)
+LoadButton.Position = UDim2.new(0, 10, 0, 160)
 LoadButton.Text = "Execute"
 LoadButton.Font = Enum.Font.GothamBold
 LoadButton.TextSize = 18
@@ -86,4 +86,3 @@ LoadButton.MouseButton1Click:Connect(function()
         warn("Error (Reson script): " .. err)
     end
 end)
-
